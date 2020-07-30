@@ -1,6 +1,7 @@
 // Imports
 import express, { Express } from 'express';
 import mongoose from 'mongoose';
+import router from './controllers';
 
 // Config
 const local = {
@@ -37,6 +38,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Routers
+app.use('/api', router);
 
 // Listener
 app.listen(PORT, () => {

@@ -1,9 +1,13 @@
 {
   "name": "mern",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.ts",
   "author": "caldric <cvaldric@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently 'tsc -w' 'nodemon dist/server.js'"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.26"
