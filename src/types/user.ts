@@ -2,7 +2,7 @@
 import { Document } from 'mongoose';
 
 // Interface
-export interface User extends Document {
+export interface IUser extends Document {
   name: string;
   password: string;
 }

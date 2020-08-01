@@ -1,6 +1,6 @@
 // Imports
 import { model, Schema } from 'mongoose';
-import { User } from '../types/user';
+import { IUser } from '../types/user';
 
 // Schema
 const userSchema: Schema = new Schema({
@@ -9,4 +9,4 @@ const userSchema: Schema = new Schema({
 });
 
 // Model export
-export default model<User>('User', userSchema);
+export default model<IUser>('User', userSchema);
